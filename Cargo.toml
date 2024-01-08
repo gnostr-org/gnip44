@@ -1,6 +1,6 @@
 [package]
 name = "nip44"
-version = "0.1.0"
+version = "v0.1.0_1"
 description = "nostr NIP-44 encryption code"
 authors = ["Mike Dilger <mike@mikedilger.com>"]
 license = "MIT"
@@ -23,4 +23,4 @@ thiserror = "1.0"
 [dev-dependencies]
 hex = "0.4"
 secp256k1 = { version = "0.28", features = [ "global-context" ] }
-serde_json = "*"
+serde_json = { version = "1.0.111", features = ["std", "alloc", "arbitrary_precision", "float_roundtrip", "indexmap", "preserve_order", "raw_value", "unbounded_depth"] }
